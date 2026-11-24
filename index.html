@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSMOSE Coffee &amp; More – Café &amp; Restauration à Grombalia</title>
+    <meta
+      name="description"
+      content="Découvrez OSMOSE Coffee & More à Grombalia, Tunisie. Explorez notre carte digitale : espresso, café glacé, smoothies, pizzas, makloub, sandwiches et jus frais."
+    />
+    <meta property="og:title" content="OSMOSE Coffee & More – Café & Restauration à Grombalia" />
+    <meta
+      property="og:description"
+      content="Plus qu'un café. Une expérience. Consultez notre carte digitale complète et rendez-nous visite à Grombalia, Tunisie."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OSMOSE Coffee & More" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OSMOSE Coffee & More – Café & Restauration" />
+    <meta
+      name="twitter:description"
+      content="Good coffee, good mood. Café de spécialité, boissons fraîches, pizzas et sandwiches à Grombalia, Tunisie."
+    />
+    <meta name="theme-color" content="#101010" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/index.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "OSMOSE Coffee & More",
+        "description": "Salon de café boutique et restauration rapide à Grombalia, Tunisie : café de spécialité, boissons glacées, smoothies, pizzas, makloub et sandwiches.",
+        "telephone": "+21655448216",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "HGX2+F57",
+          "addressLocality": "Grombalia",
+          "addressCountry": "TN"
+        },
+        "servesCuisine": ["Café", "Pizza", "Sandwiches", "Smoothies", "Jus"],
+        "priceRange": "DT",
+        "sameAs": ["https://www.instagram.com/osmosecoffee/"]
+      }
+    </script>
+  </head>
+  <body class="bg-[#101010] text-[#F5EFE8] antialiased selection:bg-[#C9824D]/30 selection:text-[#F5EFE8]">
+    <div class="min-h-screen bg-[#101010] text-[#F5EFE8] flex flex-col">
+      <!-- BARRE DE NAVIGATION -->
+      <header
+        id="site-header"
+        class="sticky top-0 z-40 transition-colors duration-200 bg-[#101010]/80 backdrop-blur-sm border-b border-white/5"
+      >
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between gap-8">
+          <a
+            href="#home"
+            class="font-display text-2xl sm:text-[1.65rem] font-semibold tracking-[0.14em] text-[#F5EFE8] hover:text-[#D9A06B] transition-colors whitespace-nowrap shrink-0"
+          >
+            OSMOSE
+          </a>
+
+          <nav aria-label="Navigation principale" class="hidden md:flex items-center gap-7">
+            <a
+              href="#home"
+              class="text-sm font-medium text-[#B8ADA2] hover:text-[#F5EFE8] relative py-1 transition-colors whitespace-nowrap shrink-0 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[#C9824D] hover:after:w-full after:transition-all after:duration-200"
+            >
+              Accueil
+            </a>
+            <a
+              href="#about"
+              class="text-sm font-medium text-[#B8ADA2] hover:text-[#F5EFE8] relative py-1 transition-colors whitespace-nowrap shrink-0 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[#C9824D] hover:after:w-full after:transition-all after:duration-200"
+            >
+              À Propos
+            </a>
+            <a
+              href="#menu"
+              class="text-sm font-medium text-[#B8ADA2] hover:text-[#F5EFE8] relative py-1 transition-colors whitespace-nowrap shrink-0 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[#C9824D] hover:after:w-full after:transition-all after:duration-200"
+            >
+              La Carte
+            </a>
+            <a
+              href="#contact"
+              class="text-sm font-medium text-[#B8ADA2] hover:text-[#F5EFE8] relative py-1 transition-colors whitespace-nowrap shrink-0 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-px after:bg-[#C9824D] hover:after:w-full after:transition-all after:duration-200"
+            >
+              Contact
+            </a>
+          </nav>
+
+          <div class="flex items-center gap-3 shrink-0">
+            <a
+              href="#menu"
+              class="hidden sm:inline-flex items-center justify-center px-5 py-2 text-xs font-semibold tracking-wider uppercase bg-[#C9824D] text-[#101010] rounded-md hover:bg-[#D9A06B] transition-colors duration-200 whitespace-nowrap shrink-0 min-h-[40px]"
+            >
+              Carte Digitale
+            </a>
+
+            <button
+              id="mobile-menu-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-nav"
+              aria-label="Ouvrir le menu de navigation"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-md text-[#F5EFE8] hover:text-[#D9A06B] hover:bg-white/5 transition-colors"
+            >
+              <svg id="mobile-icon-open" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+              <svg id="mobile-icon-close" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <nav
+          id="mobile-nav"
+          aria-label="Navigation mobile"
+          class="hidden md:hidden bg-[#161616] border-t border-[#C9824D]/20 px-4 py-4 space-y-1"
+        >
+          <a href="#home" data-mobile-link class="flex items-center justify-between px-3 py-3 text-base font-medium text-[#F5EFE8] hover:text-[#D9A06B] hover:bg-white/[0.03] rounded-md transition-colors min-h-[44px]">
+            <span>Accueil</span>
+            <span class="text-[#C9824D]/60 text-xs">↗</span>
+          </a>
+          <a href="#about" data-mobile-link class="flex items-center justify-between px-3 py-3 text-base font-medium text-[#F5EFE8] hover:text-[#D9A06B] hover:bg-white/[0.03] rounded-md transition-colors min-h-[44px]">
+            <span>À Propos</span>
+            <span class="text-[#C9824D]/60 text-xs">↗</span>
+          </a>
+          <a href="#menu" data-mobile-link class="flex items-center justify-between px-3 py-3 text-base font-medium text-[#F5EFE8] hover:text-[#D9A06B] hover:bg-white/[0.03] rounded-md transition-colors min-h-[44px]">
+            <span>La Carte</span>
+            <span class="text-[#C9824D]/60 text-xs">↗</span>
+          </a>
+          <a href="#contact" data-mobile-link class="flex items-center justify-between px-3 py-3 text-base font-medium text-[#F5EFE8] hover:text-[#D9A06B] hover:bg-white/[0.03] rounded-md transition-colors min-h-[44px]">
+            <span>Contact</span>
+            <span class="text-[#C9824D]/60 text-xs">↗</span>
+          </a>
+          <div class="pt-2 border-t border-white/10">
+            <a
+              href="tel:+21655448216"
+              data-mobile-link
+              class="flex items-center justify-center w-full py-3 px-4 text-sm font-semibold bg-[#C9824D] text-[#101010] rounded-md hover:bg-[#D9A06B] transition-colors min-h-[44px]"
+            >
+              Appeler +216 55 448 216
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="flex-1">
+        <!-- SECTION HERO -->
+        <section
+          id="home"
+          class="relative min-h-[calc(100vh-3.5rem)] sm:min-h-[calc(100vh-4rem)] flex items-center overflow-hidden bg-[#101010]"
+        >
+          <div class="absolute inset-0">
+            <img
+              id="hero-img"
+              src="/src/assets/images/hero_osmose_coffee_1795522096272.jpg"
+              alt="Extraction d'espresso de spécialité chez Osmose Coffee & More"
+              referrerpolicy="no-referrer"
+              class="w-full h-full object-cover object-center opacity-70"
+            />
+            <div
+              id="hero-fallback"
+              class="hidden w-full h-full bg-gradient-to-br from-[#1B1510] via-[#101010] to-[#1A130D]"
+              aria-hidden="true"
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[#101010] via-[#101010]/80 to-[#101010]/35"
+              aria-hidden="true"
+            ></div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#101010] via-transparent to-[#101010]/50"
+              aria-hidden="true"
+            ></div>
+          </div>
+
+          <div class="relative z-10 max-w-6xl mx-auto w-full px-4 sm:px-6 py-16 sm:py-24">
+            <div class="max-w-2xl">
+              <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs sm:text-sm tracking-[0.22em] uppercase text-[#D9A06B] mb-5">
+                <span class="font-semibold">OSMOSE</span>
+                <span aria-hidden="true" class="text-[#C9824D]/60">·</span>
+                <span class="text-[#F5EFE8]/90">Coffee &amp; More</span>
+                <span aria-hidden="true" class="text-[#C9824D]/60">·</span>
+                <span class="normal-case tracking-normal italic font-display text-base sm:text-lg text-[#D9A06B]">
+                  Good coffee, good mood ♡
+                </span>
+              </div>
+
+              <h1
+                class="font-display font-semibold text-[#F5EFE8] tracking-[-0.015em] leading-[1.06] mb-6"
+                style="font-size: clamp(2.5rem, 5vw, 4.35rem); text-wrap: balance;"
+              >
+                Plus qu&apos;un café.
+                <br />
+                <span class="text-[#D9A06B] italic font-medium">Une expérience.</span>
+              </h1>
+
+              <p class="text-base sm:text-lg text-[#D8CEC3] leading-relaxed max-w-xl mb-9">
+                Découvrez l&apos;alliance parfaite entre café d&apos;exception, boissons
+                rafraîchissantes et cuisine savoureuse.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-4">
+                <a
+                  href="#menu"
+                  class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold bg-[#C9824D] text-[#101010] rounded-md hover:bg-[#D9A06B] transition-all duration-200 hover:-translate-y-0.5 whitespace-nowrap shrink-0 min-h-[44px]"
+                >
+                  <span>Découvrir la Carte</span>
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m7 7 10 10" />
+                    <path d="M17 7v10H7" />
+                  </svg>
+                </a>
+
+                <a
+                  href="#contact"
+                  class="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-medium text-[#F5EFE8] border border-[#C9824D]/45 bg-[#101010]/60 backdrop-blur-sm rounded-md hover:border-[#D9A06B] hover:text-[#D9A06B] transition-all duration-200 whitespace-nowrap shrink-0 min-h-[44px]"
+                >
+                  <span>Nous Contacter</span>
+                </a>
+              </div>
+
+              <div class="mt-12 pt-6 border-t border-white/10 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs sm:text-sm text-[#B8ADA2]">
+                <span class="inline-flex items-center gap-1.5 text-[#F5EFE8]">
+                  <svg class="w-3.5 h-3.5 text-[#C9824D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <span>Grombalia, Tunisie</span>
+                </span>
+                <span aria-hidden="true" class="text-[#C9824D]/50">·</span>
+                <span>Ferme à 22:00</span>
+                <span aria-hidden="true" class="text-[#C9824D]/50">·</span>
+                <span class="inline-flex items-center gap-1.5">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-[#C9824D]" aria-hidden="true">
+                    <ellipse cx="12" cy="12" rx="6.5" ry="9" transform="rotate(-24 12 12)" />
+                    <path d="M9 4.8c2.2 3.2.2 6.8 3 14.4" />
+                  </svg>
+                  <span>68 créations à la carte</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hidden lg:block absolute bottom-6 right-10 text-[#C9824D]/60 pointer-events-none"
+            aria-hidden="true"
+          >
+            <svg viewBox="0 0 120 40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="w-32 h-10">
+              <path d="M8 20h104" stroke-opacity="0.35" />
+              <path d="M52 20c3-7 9-10 15-10-1 7-6 11-15 10Z" stroke-opacity="0.7" />
+              <path d="M68 20c-3 7-9 10-15 10 1-7 6-11 15-10Z" stroke-opacity="0.7" />
+              <circle cx="60" cy="20" r="2.2" fill="currentColor" fill-opacity="0.55" stroke="none" />
+            </svg>
+          </div>
+        </section>
+
+        <!-- SECTION À PROPOS -->
+        <section id="about" class="py-20 sm:py-28 bg-[#101010] border-t border-white/5">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
+              <div class="lg:col-span-6 relative">
+                <div class="relative h-full min-h-[320px] sm:min-h-[420px] rounded-xl overflow-hidden border border-[#C9824D]/25 bg-[#161616]">
+                  <img
+                    id="about-img"
+                    src="/src/assets/images/gallery_espresso_latte_1795522097957.jpg"
+                    alt="Cappuccino velouté et double espresso servis sur ardoise noire chez Osmose"
+                    referrerpolicy="no-referrer"
+                    class="w-full h-full lg:h-full object-cover object-center"
+                  />
+                  <div
+                    id="about-fallback"
+                    class="hidden w-full h-full flex-col items-center justify-center gap-3 p-8 text-[#C9824D]"
+                  >
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="w-14 h-14" aria-hidden="true">
+                      <path d="M10 21h22v7c0 6.1-4.9 11-11 11s-11-4.9-11-11v-7Z" />
+                      <path d="M32 23h3.5a3.5 3.5 0 0 1 0 7H32" />
+                      <path d="M8 41h26" />
+                      <path d="M17 16c0-2.5 2-3.5 2-6" stroke-opacity="0.7" />
+                      <path d="M24 15c0-2.5 2-3.5 2-6" stroke-opacity="0.55" />
+                    </svg>
+                    <span class="font-display text-xl text-[#F5EFE8]">Osmose Coffee &amp; More</span>
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-[#101010]/70 via-transparent to-transparent pointer-events-none"
+                    aria-hidden="true"
+                  ></div>
+                  <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between text-xs tracking-wider uppercase text-[#F5EFE8]/90">
+                    <span>Savoir-Faire Barista</span>
+                    <span class="text-[#D9A06B]">Grombalia · Tunisie</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:col-span-6 flex flex-col justify-center">
+                <p class="text-xs font-medium tracking-[0.22em] uppercase text-[#C9824D] mb-3">
+                  À Propos d&apos;Osmose
+                </p>
+                <h2
+                  class="font-display font-semibold text-[#F5EFE8] leading-[1.12] mb-6"
+                  style="font-size: clamp(2rem, 3.4vw, 3rem); text-wrap: balance;"
+                >
+                  Un lieu chaleureux au cœur de Grombalia.
+                </h2>
+
+                <div class="space-y-4 text-[#B8ADA2] text-base leading-relaxed">
+                  <p>
+                    Chez <strong class="text-[#F5EFE8] font-medium">OSMOSE Coffee &amp; More</strong>,
+                    chaque moment prend une saveur particulière. De l&apos;espresso matinal à la
+                    créma dorée jusqu&apos;aux lattes glacés, smoothies onctueux et jus frais pressés,
+                    nos boissons sont préparées avec soin pour accompagner vos envies.
+                  </p>
+                  <p>
+                    Côté cuisine, retrouvez nos makloubs dorés à la minute, nos sandwiches généreux
+                    et nos pizzas cuites au four à partager entre amis ou en famille jusqu&apos;à
+                    22:00.
+                  </p>
+                </div>
+
+                <div class="my-8 py-5 border-y border-[#C9824D]/25 flex items-center justify-between gap-4">
+                  <p class="font-display italic text-2xl sm:text-[1.75rem] text-[#D9A06B]">
+                    &laquo;&nbsp;Good coffee, good mood&nbsp;&raquo;
+                  </p>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-[#C9824D]/80 shrink-0" aria-hidden="true">
+                    <ellipse cx="12" cy="12" rx="6.5" ry="9" transform="rotate(-24 12 12)" />
+                    <path d="M9 4.8c2.2 3.2.2 6.8 3 14.4" />
+                  </svg>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 sm:gap-6 pt-2">
+                  <div>
+                    <p class="font-display text-2xl sm:text-3xl font-semibold text-[#F5EFE8] tabular-nums">
+                      10
+                    </p>
+                    <p class="text-xs sm:text-sm text-[#B8ADA2] mt-1">Univers à la Carte</p>
+                  </div>
+                  <div class="border-l border-white/10 pl-4 sm:pl-6">
+                    <p class="font-display text-2xl sm:text-3xl font-semibold text-[#F5EFE8] tabular-nums">
+                      22:00
+                    </p>
+                    <p class="text-xs sm:text-sm text-[#B8ADA2] mt-1">Fermeture Quotidienne</p>
+                  </div>
+                  <div class="border-l border-white/10 pl-4 sm:pl-6">
+                    <p class="font-display text-2xl sm:text-3xl font-semibold text-[#D9A06B]">
+                      Fait Minute
+                    </p>
+                    <p class="text-xs sm:text-sm text-[#B8ADA2] mt-1">Café &amp; Cuisine</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center gap-4 text-[#C9824D]/70 mt-16 sm:mt-20" aria-hidden="true">
+              <span class="h-px w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#C9824D]/50"></span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-[#D9A06B]">
+                <ellipse cx="12" cy="12" rx="6.5" ry="9" transform="rotate(-24 12 12)" />
+                <path d="M9 4.8c2.2 3.2.2 6.8 3 14.4" />
+              </svg>
+              <span class="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#C9824D]/50"></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION CARTE DIGITALE -->
+        <section id="menu" class="py-20 sm:py-28 bg-[#101010] relative scroll-mt-16">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+              <div class="flex justify-center text-[#C9824D] mb-2" aria-hidden="true">
+                <svg viewBox="0 0 120 40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="w-28 h-8">
+                  <path d="M8 20h104" stroke-opacity="0.35" />
+                  <path d="M52 20c3-7 9-10 15-10-1 7-6 11-15 10Z" stroke-opacity="0.7" />
+                  <path d="M68 20c-3 7-9 10-15 10 1-7 6-11 15-10Z" stroke-opacity="0.7" />
+                  <circle cx="60" cy="20" r="2.2" fill="currentColor" fill-opacity="0.55" stroke="none" />
+                </svg>
+              </div>
+              <p class="text-xs font-medium tracking-[0.22em] uppercase text-[#C9824D] mb-2">
+                Carte Digitale · Grombalia
+              </p>
+              <h2
+                class="font-display font-semibold text-[#F5EFE8] leading-tight mb-4"
+                style="font-size: clamp(2.1rem, 3.8vw, 3.25rem); text-wrap: balance;"
+              >
+                Boissons Artisanales &amp; Cuisine Maison
+              </h2>
+              <p class="text-sm sm:text-base text-[#B8ADA2]">
+                Découvrez notre sélection complète de cafés chauds et glacés, thés, smoothies,
+                milkshakes, pizzas au four, makloubs, sandwiches et jus frais. Tous les prix sont
+                indiqués en Dinars Tunisiens (DT).
+              </p>
+            </div>
+
+            <!-- Contrôles de recherche et catégories -->
+            <div class="bg-[#161616] border border-[#2A2521] rounded-xl p-4 sm:p-5 mb-10 sm:mb-12">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                <div class="relative flex-1 max-w-xl">
+                  <svg
+                    class="w-4 h-4 text-[#C9824D] absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                  <input
+                    id="menu-search"
+                    type="search"
+                    placeholder="Rechercher un espresso, pistache, makloub, pizza..."
+                    aria-label="Rechercher un produit dans la carte"
+                    class="w-full h-11 pl-10 pr-10 bg-[#101010] border border-[#2F2A25] rounded-lg text-sm text-[#F5EFE8] placeholder:text-[#B8ADA2]/60 focus:border-[#C9824D] focus:outline-none transition-colors"
+                  />
+                  <button
+                    id="menu-search-clear"
+                    type="button"
+                    aria-label="Effacer la recherche"
+                    class="hidden absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 items-center justify-center text-[#B8ADA2] hover:text-[#F5EFE8] rounded-md"
+                  >
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 6 6 18" />
+                      <path d="m6 6 12 12" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="flex items-center justify-between md:justify-end gap-4 text-xs sm:text-sm text-[#B8ADA2]">
+                  <span id="menu-count" class="tabular-nums"></span>
+                  <button
+                    id="menu-reset-btn"
+                    type="button"
+                    class="hidden text-[#D9A06B] hover:text-[#F5EFE8] underline underline-offset-4 transition-colors whitespace-nowrap shrink-0"
+                  >
+                    Réinitialiser
+                  </button>
+                </div>
+              </div>
+
+              <div
+                id="category-tabs"
+                role="tablist"
+                aria-label="Catégories du menu"
+                class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1"
+              ></div>
+            </div>
+
+            <!-- Liste dynamique des produits -->
+            <div id="menu-results" class="space-y-14 sm:space-y-16"></div>
+          </div>
+
+          <!-- Barre flottante mobile -->
+          <div class="md:hidden fixed bottom-3 inset-x-3 z-30 pointer-events-none">
+            <div class="pointer-events-auto max-w-md mx-auto bg-[#161616]/95 backdrop-blur-md border border-[#C9824D]/40 rounded-xl px-2.5 h-12 flex items-center justify-between gap-2 shadow-xl">
+              <button
+                id="mobile-sheet-open-btn"
+                type="button"
+                class="flex items-center gap-2 px-3 py-1.5 text-xs font-semibold text-[#F5EFE8] hover:text-[#D9A06B] rounded-lg min-h-[36px] min-w-0"
+              >
+                <svg class="w-4 h-4 text-[#C9824D] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="21" x2="14" y1="4" y2="4" />
+                  <line x1="10" x2="3" y1="4" y2="4" />
+                  <line x1="21" x2="12" y1="12" y2="12" />
+                  <line x1="8" x2="3" y1="12" y2="12" />
+                  <line x1="21" x2="16" y1="20" y2="20" />
+                  <line x1="12" x2="3" y1="20" y2="20" />
+                  <line x1="14" x2="14" y1="2" y2="6" />
+                  <line x1="8" x2="8" y1="10" y2="14" />
+                  <line x1="16" x2="16" y1="18" y2="22" />
+                </svg>
+                <span id="mobile-active-category-label" class="truncate">Toutes les catégories</span>
+              </button>
+
+              <div class="flex items-center gap-1 shrink-0">
+                <button
+                  id="mobile-focus-search-btn"
+                  type="button"
+                  aria-label="Rechercher dans la carte"
+                  class="inline-flex items-center justify-center w-9 h-9 rounded-lg text-[#D9A06B] hover:bg-white/5"
+                >
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg>
+                </button>
+                <button
+                  id="mobile-scroll-menu-btn"
+                  type="button"
+                  aria-label="Revenir en haut de la carte"
+                  class="inline-flex items-center justify-center px-3 h-9 rounded-lg bg-[#C9824D] text-[#101010] text-xs font-semibold"
+                >
+                  <svg class="w-4 h-4 mr-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m18 15-6-6-6 6" />
+                  </svg>
+                  <span>Carte</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tiroir rapide des catégories mobile -->
+          <div
+            id="mobile-category-sheet"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Catégories de la carte"
+            class="hidden md:hidden fixed inset-0 z-50 bg-[#101010]/80 backdrop-blur-sm items-end"
+          >
+            <div
+              id="mobile-sheet-panel"
+              class="w-full bg-[#161616] border-t border-[#C9824D]/35 rounded-t-2xl p-5 max-h-[75vh] overflow-y-auto"
+            >
+              <div class="flex items-center justify-between pb-3 mb-3 border-b border-white/10">
+                <div>
+                  <p class="text-[11px] uppercase tracking-[0.2em] text-[#C9824D]">
+                    Accès Rapide
+                  </p>
+                  <h3 class="font-display text-2xl font-semibold text-[#F5EFE8]">
+                    Catégories de la Carte
+                  </h3>
+                </div>
+                <button
+                  id="mobile-sheet-close-btn"
+                  type="button"
+                  aria-label="Fermer les catégories"
+                  class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-[#F5EFE8]"
+                >
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div id="mobile-category-grid" class="grid grid-cols-2 gap-2.5"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION CONTACT & LOCALISATION -->
+        <section id="contact" class="py-20 sm:py-28 bg-[#101010] border-t border-white/5">
+          <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
+              <div class="lg:col-span-5 flex flex-col justify-between">
+                <div>
+                  <p class="text-xs font-medium tracking-[0.22em] uppercase text-[#C9824D] mb-3">
+                    Visite &amp; Contact
+                  </p>
+                  <h2
+                    class="font-display font-semibold text-[#F5EFE8] leading-tight mb-4"
+                    style="font-size: clamp(2rem, 3.4vw, 3rem); text-wrap: balance;"
+                  >
+                    Nous Trouver à Grombalia
+                  </h2>
+                  <p class="text-sm sm:text-base text-[#B8ADA2] leading-relaxed mb-8">
+                    Passez savourer un espresso matinal, partagez un café glacé ou un smoothie
+                    rafraîchissant, ou retrouvez-nous en soirée autour d&apos;une pizza ou d&apos;un
+                    makloub.
+                  </p>
+
+                  <dl class="space-y-5 border-y border-white/10 py-6">
+                    <div class="flex items-start gap-3.5">
+                      <svg class="w-4 h-4 text-[#C9824D] shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <div>
+                        <dt class="text-xs uppercase tracking-wider text-[#B8ADA2]">Adresse</dt>
+                        <dd class="text-sm sm:text-base font-medium text-[#F5EFE8] mt-0.5">
+                          HGX2+F57, Grombalia, Tunisie
+                        </dd>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start gap-3.5">
+                      <svg class="w-4 h-4 text-[#C9824D] shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                      <div>
+                        <dt class="text-xs uppercase tracking-wider text-[#B8ADA2]">Téléphone</dt>
+                        <dd class="mt-0.5">
+                          <a
+                            href="tel:+21655448216"
+                            class="text-sm sm:text-base font-medium text-[#F5EFE8] hover:text-[#D9A06B] transition-colors tabular-nums"
+                          >
+                            +216 55 448 216
+                          </a>
+                        </dd>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start gap-3.5">
+                      <svg class="w-4 h-4 text-[#C9824D] shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <div>
+                        <dt class="text-xs uppercase tracking-wider text-[#B8ADA2]">Horaires</dt>
+                        <dd class="text-sm sm:text-base font-medium text-[#D9A06B] mt-0.5">
+                          Ferme à 22:00
+                        </dd>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start gap-3.5">
+                      <svg class="w-4 h-4 text-[#C9824D] shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                      </svg>
+                      <div>
+                        <dt class="text-xs uppercase tracking-wider text-[#B8ADA2]">Instagram</dt>
+                        <dd class="mt-0.5">
+                          <a
+                            href="https://www.instagram.com/osmosecoffee/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-sm sm:text-base font-medium text-[#F5EFE8] hover:text-[#D9A06B] transition-colors"
+                          >
+                            @OSMOSECOFFEE
+                          </a>
+                        </dd>
+                      </div>
+                    </div>
+                  </dl>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <a
+                    href="https://wa.me/21655448216"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold bg-[#C9824D] text-[#101010] rounded-md hover:bg-[#D9A06B] transition-colors min-h-[44px] whitespace-nowrap"
+                  >
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                    </svg>
+                    <span>WhatsApp</span>
+                  </a>
+
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=HGX2%2BF57%2C+Grombalia%2C+Tunisia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium text-[#F5EFE8] border border-[#C9824D]/45 bg-[#161616] rounded-md hover:border-[#D9A06B] hover:text-[#D9A06B] transition-colors min-h-[44px] whitespace-nowrap"
+                  >
+                    <svg class="w-4 h-4 text-[#C9824D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polygon points="3 11 22 2 13 21 11 13 3 11" />
+                    </svg>
+                    <span>Itinéraire</span>
+                  </a>
+
+                  <a
+                    href="tel:+21655448216"
+                    class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium text-[#F5EFE8] border border-white/15 bg-[#161616] rounded-md hover:border-[#C9824D]/50 hover:text-[#D9A06B] transition-colors min-h-[44px] whitespace-nowrap"
+                  >
+                    <svg class="w-4 h-4 text-[#C9824D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>Appeler</span>
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/osmosecoffee/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-medium text-[#F5EFE8] border border-white/15 bg-[#161616] rounded-md hover:border-[#C9824D]/50 hover:text-[#D9A06B] transition-colors min-h-[44px] whitespace-nowrap"
+                  >
+                    <svg class="w-4 h-4 text-[#C9824D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                    <span>@OSMOSECOFFEE</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Carte intégrée centrée sur Grombalia (sans clé API) -->
+              <div class="lg:col-span-7 flex flex-col justify-center">
+                <div class="w-full rounded-xl overflow-hidden border border-[#C9824D]/30 bg-[#161616] flex flex-col">
+                  <div class="px-5 py-3.5 border-b border-white/10 flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex items-center gap-2.5 text-sm text-[#F5EFE8]">
+                      <svg class="w-4 h-4 text-[#C9824D] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <span class="font-medium">HGX2+F57, Grombalia, Tunisie</span>
+                    </div>
+                    <a
+                      href="https://www.google.com/maps/dir/?api=1&destination=HGX2%2BF57%2C+Grombalia%2C+Tunisia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1.5 text-xs font-medium text-[#D9A06B] hover:text-[#F5EFE8] transition-colors whitespace-nowrap"
+                    >
+                      <span>Ouvrir dans Google Maps</span>
+                      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M15 3h6v6" />
+                        <path d="M10 14 21 3" />
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      </svg>
+                    </a>
+                  </div>
+
+                  <div class="relative w-full h-[340px] sm:h-[400px] bg-[#101010]">
+                    <iframe
+                      title="Carte de localisation Osmose Coffee & More à Grombalia, Tunisie"
+                      src="https://maps.google.com/maps?q=HGX2%2BF57%2C%20Grombalia%2C%20Tunisia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      class="w-full h-full border-0"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- PIED DE PAGE -->
+      <footer class="bg-[#0B0B0B] border-t border-[#C9824D]/20 pb-20 md:pb-10 pt-14">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-white/10">
+            <div class="md:col-span-5">
+              <a
+                href="#home"
+                class="font-display text-3xl font-semibold tracking-[0.14em] text-[#F5EFE8]"
+              >
+                OSMOSE
+              </a>
+              <p class="text-xs tracking-[0.2em] uppercase text-[#C9824D] mt-1">
+                Coffee &amp; More
+              </p>
+              <p class="font-display italic text-xl text-[#D9A06B] mt-4">
+                &laquo;&nbsp;Good coffee, good mood ♡&nbsp;&raquo;
+              </p>
+            </div>
+
+            <div class="md:col-span-3">
+              <p class="text-xs uppercase tracking-[0.2em] text-[#C9824D] mb-4">Navigation</p>
+              <ul class="space-y-2.5 text-sm text-[#B8ADA2]">
+                <li><a href="#home" class="hover:text-[#F5EFE8] transition-colors">Accueil</a></li>
+                <li><a href="#about" class="hover:text-[#F5EFE8] transition-colors">À Propos</a></li>
+                <li><a href="#menu" class="hover:text-[#F5EFE8] transition-colors">Carte Digitale</a></li>
+                <li><a href="#contact" class="hover:text-[#F5EFE8] transition-colors">Contact &amp; Plan</a></li>
+              </ul>
+            </div>
+
+            <div class="md:col-span-4">
+              <p class="text-xs uppercase tracking-[0.2em] text-[#C9824D] mb-4">Visite &amp; Réseaux</p>
+              <ul class="space-y-3 text-sm text-[#B8ADA2]">
+                <li class="flex items-start gap-2.5">
+                  <svg class="w-4 h-4 text-[#C9824D] shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <span>HGX2+F57, Grombalia, Tunisie</span>
+                </li>
+                <li>
+                  <a
+                    href="tel:+21655448216"
+                    class="inline-flex items-center gap-2.5 hover:text-[#F5EFE8] transition-colors tabular-nums"
+                  >
+                    <svg class="w-4 h-4 text-[#C9824D] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    <span>+216 55 448 216</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/osmosecoffee/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2.5 hover:text-[#F5EFE8] transition-colors"
+                  >
+                    <svg class="w-4 h-4 text-[#C9824D] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                    <span>@OSMOSECOFFEE</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#B8ADA2]">
+            <p>&copy; <span id="footer-year"></span> Osmose Coffee &amp; More. Tous droits réservés.</p>
+            <p class="inline-flex items-center gap-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-[#C9824D]" aria-hidden="true">
+                <ellipse cx="12" cy="12" rx="6.5" ry="9" transform="rotate(-24 12 12)" />
+                <path d="M9 4.8c2.2 3.2.2 6.8 3 14.4" />
+              </svg>
+              <span>Ferme à 22:00 · Grombalia, Tunisie</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

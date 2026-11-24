@@ -1,0 +1,6 @@
+{
+  "name": "OSMOSE Coffee & More",
+  "description": "Specialty coffee house and fast-food lounge in Grombalia, Tunisia. Explore our interactive digital menu, gallery, and location.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
